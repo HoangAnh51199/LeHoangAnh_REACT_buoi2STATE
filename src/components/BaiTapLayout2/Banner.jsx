@@ -1,25 +1,15 @@
 import React, { Component } from "react";
+import ChiTietGlasses from "./ChiTietGlasses";
+import data from "../../data/dataGlasses.json";
 
 export default class Banner extends Component {
+  // state = {
+  //   glassDetail: data[0],
+  // };
+
   render() {
     return (
-      <section className="model py-4">
-        <div className="container model  ">
-        <div className="banner_content d-flex "> 
-       
-        <div className="col-3 model">
-          <img className="img_model" src="./glassesImage/model.jpg" alt="" />
-        </div>
-        <div className="col-3 model">
-        <img  className="img_model" src="./glassesImage/model.jpg" alt="" />
-        </div>
-      
-        </div>
-        </div>
-        
-   
-      </section>
-      
+     <div></div>
     );
   }
 }
