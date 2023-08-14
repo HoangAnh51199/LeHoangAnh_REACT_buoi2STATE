@@ -15,7 +15,7 @@ export default class BaiTapLayout2 extends Component {
     //console.log(glass);
     this.setState({
       glassDetail: glass,
-    })
+    });
   };
 
   render() {
@@ -24,40 +24,11 @@ export default class BaiTapLayout2 extends Component {
         <div className="background_overplay">
           <Header />
 
-        
-            {/*img model */}
-            <section className="model py-4">
-        <div className="container model  ">
-          <div className="banner_content d-flex ">
-            <div className="col-3 model">
-              <img
-                className="img_model"
-                src="./glassesImage/model.jpg"
-                alt=""
-              />
-              <ChiTietGlasses detail={this.state.glassDetail} />
-            </div>
-            <div className="col-3 model">
-              <img
-                className="img_model"
-                src="./glassesImage/model.jpg"
-                alt=""
-              />
-              <div className="description p-1">
-                <h3 style={{ color: "blue" }}>name</h3>
-                <p style={{ color: "white" }}>
-                  
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-                  modi?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          {/*img model */}
 
-            <DanhSachGlasses getGlassDetail={this.getGlassDetail} data={data} />
-          
+          <Banner state={this.state.glassDetail} />
+
+          <DanhSachGlasses getGlassDetail={this.getGlassDetail} data={data} />
         </div>
       </div>
     );
